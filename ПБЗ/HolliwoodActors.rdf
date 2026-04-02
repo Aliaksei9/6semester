@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#"
+     xml:base="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology"
+     xmlns:hol="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#acted_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#acted_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#belongs_to_decade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#belongs_to_decade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#directed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#directed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#has_genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#has_genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#has_role_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#has_role_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RoleType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#produced_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#produced_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ProductionCompany"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#uses_method -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#uses_method">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ActingMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#won_award -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#won_award">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Award"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#birth_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#birth_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#release_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#release_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ActingMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ActingMethod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Award"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ProductionCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ProductionCompany"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RoleType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RoleType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Genre"/>
+        <name>Action</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#BreakingBad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#BreakingBad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+        <belongs_to_decade rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade2000s"/>
+        <has_genre rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Drama"/>
+        <produced_by rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Universal"/>
+        <name>Breaking Bad</name>
+        <release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#BryanCranston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#BryanCranston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#BreakingBad"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MethodActing"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestActor"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1956</birth_year>
+        <name>Bryan Cranston</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ChristianBale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ChristianBale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheDarkKnight"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MethodActing"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestSupportingActor"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1974</birth_year>
+        <name>Christian Bale</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ChristopherNolan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ChristopherNolan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Inception"/>
+        <directed rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheDarkKnight"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SAG"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</birth_year>
+        <name>Christopher Nolan</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Genre"/>
+        <name>Comedy</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#DamienChazelle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#DamienChazelle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LaLaLand"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#GoldenGlobe"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1985</birth_year>
+        <name>Damien Chazelle</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade1990s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade1990s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade"/>
+        <name>1990s</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade2000s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade2000s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade"/>
+        <name>2000s</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade2010s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade2010s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade"/>
+        <name>2010s</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Genre"/>
+        <name>Drama</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ForrestGump -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ForrestGump">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <belongs_to_decade rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade1990s"/>
+        <has_genre rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Drama"/>
+        <produced_by rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Paramount"/>
+        <name>Forrest Gump</name>
+        <release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#FrankDarabont -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#FrankDarabont">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheShawshankRedemption"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestSupportingActor"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1959</birth_year>
+        <name>Frank Darabont</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Friends -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Friends">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TVSeries"/>
+        <belongs_to_decade rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade1990s"/>
+        <has_genre rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Comedy"/>
+        <produced_by rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#WarnerBros"/>
+        <name>Friends</name>
+        <release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#GoldenGlobe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#GoldenGlobe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Award"/>
+        <name>Golden Globe Award</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Inception -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Inception">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <belongs_to_decade rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade2010s"/>
+        <has_genre rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Action"/>
+        <produced_by rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#WarnerBros"/>
+        <name>Inception</name>
+        <release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#JenniferAniston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#JenniferAniston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Friends"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MeisnerTechnique"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SAG"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1969</birth_year>
+        <name>Jennifer Aniston</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#JohnTravolta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#JohnTravolta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#PulpFiction"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MethodActing"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#GoldenGlobe"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1954</birth_year>
+        <name>John Travolta</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LaLaLand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LaLaLand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <belongs_to_decade rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade2010s"/>
+        <has_genre rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Comedy"/>
+        <produced_by rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Paramount"/>
+        <name>La La Land</name>
+        <release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RoleType"/>
+        <name>Leading Role</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeonardoDiCaprio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeonardoDiCaprio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Inception"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MethodActing"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestActor"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1974</birth_year>
+        <name>Leonardo DiCaprio</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MeisnerTechnique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MeisnerTechnique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ActingMethod"/>
+        <name>Meisner Technique</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MethodActing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MethodActing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ActingMethod"/>
+        <name>Method Acting</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MorganFreeman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MorganFreeman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheShawshankRedemption"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SupportingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MeisnerTechnique"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestSupportingActor"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1937</birth_year>
+        <name>Morgan Freeman</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestActor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestActor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Award"/>
+        <name>Academy Award for Best Actor</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestSupportingActor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestSupportingActor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Award"/>
+        <name>Academy Award for Best Supporting Actor</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Paramount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Paramount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ProductionCompany"/>
+        <name>Paramount Pictures</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#PulpFiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#PulpFiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <belongs_to_decade rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade1990s"/>
+        <has_genre rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Action"/>
+        <produced_by rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#WarnerBros"/>
+        <name>Pulp Fiction</name>
+        <release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#QuentinTarantino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#QuentinTarantino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#PulpFiction"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#GoldenGlobe"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1963</birth_year>
+        <name>Quentin Tarantino</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RobertZemeckis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RobertZemeckis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ForrestGump"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestActor"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1952</birth_year>
+        <name>Robert Zemeckis</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RyanGosling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RyanGosling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LaLaLand"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MeisnerTechnique"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#GoldenGlobe"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</birth_year>
+        <name>Ryan Gosling</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SAG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SAG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Award"/>
+        <name>Screen Actors Guild Award</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SamuelLJackson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SamuelLJackson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#PulpFiction"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheDarkKnight"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SupportingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MeisnerTechnique"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SAG"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1948</birth_year>
+        <name>Samuel L. Jackson</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SupportingRole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#SupportingRole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RoleType"/>
+        <name>Supporting Role</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheDarkKnight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheDarkKnight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <belongs_to_decade rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade2000s"/>
+        <has_genre rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Action"/>
+        <produced_by rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#WarnerBros"/>
+        <name>The Dark Knight</name>
+        <release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheShawshankRedemption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheShawshankRedemption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Movie"/>
+        <belongs_to_decade rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Decade1990s"/>
+        <has_genre rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Drama"/>
+        <produced_by rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#WarnerBros"/>
+        <name>The Shawshank Redemption</name>
+        <release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TomHanks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TomHanks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ForrestGump"/>
+        <acted_in rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#TheShawshankRedemption"/>
+        <has_role_type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#LeadingRole"/>
+        <uses_method rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#MethodActing"/>
+        <won_award rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#OscarBestActor"/>
+        <birth_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1956</birth_year>
+        <name>Tom Hanks</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Universal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Universal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ProductionCompany"/>
+        <name>Universal Pictures</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#WarnerBros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#WarnerBros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#ProductionCompany"/>
+        <name>Warner Bros.</name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

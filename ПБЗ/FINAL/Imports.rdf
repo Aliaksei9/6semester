@@ -1,0 +1,649 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2"
+     xmlns:ns="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2-new="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2">
+        <owl:imports rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#uses_playing_method -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#uses_playing_method">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Crowd"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MainRoleActor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SecondaryRoleActor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Actor"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#belongs_to_the_period -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#belongs_to_the_period">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#followed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#followed_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#has_got_award -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#has_got_award">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Award"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Crowd"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MainRoleActor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SecondaryRoleActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ActingMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#works_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#works_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#used_in -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#used_in">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#works_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#end_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#end_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ActingMethod"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#Genre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#RoleType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#release_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#release_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#start_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#start_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#birth_year -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology#birth_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Director"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ActingMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ActingMethod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Animation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Animation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Award"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Crowd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Crowd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MainRoleActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MainRoleActor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SecondaryRoleActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SecondaryRoleActor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Series -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Series">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StuntDirector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StuntDirector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ProductionRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#TheatricalPerfomance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#TheatricalPerfomance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#AlexanderKashperov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#AlexanderKashperov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SecondaryRoleActor"/>
+        <uses rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StanislavskySystem"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosy"/>
+        <name>Александр Кашперов</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#AnastasiyaSlutskaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#AnastasiyaSlutskaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ModernPeriod"/>
+        <has_got_award rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ListapadGrandPrix2005"/>
+        <name>Анастасия Слуцкая</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2003</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#AndreyKudinenko -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#AndreyKudinenko">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Director"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Masakra"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SmertShpionam"/>
+        <name>Андрей Кудиненко</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SovietPeriod"/>
+        <has_got_award rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StatePrize1985"/>
+        <name>Белые Росы</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1983</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosyVozvrashchenie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosyVozvrashchenie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ModernPeriod"/>
+        <has_got_award rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#GoldenEagleAward"/>
+        <name>Белые Росы. Возвращение</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2014</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#GennadyGarbuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#GennadyGarbuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MainRoleActor"/>
+        <has_got_award rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PeopleArtistOfBelarus"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosy"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#LyudiNaBolate"/>
+        <name>Геннадий Гарбук</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#GoldenEagleAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#GoldenEagleAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Award"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#GoldenEagle"/>
+        <name>Премия «Золотой орёл»</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#GoldenEagle -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#GoldenEagle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#GosudarstvennayaGranitsa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#GosudarstvennayaGranitsa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Series"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SovietPeriod"/>
+        <name>Государственная граница</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1980</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#IvanPetrov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#IvanPetrov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SecondaryRoleActor"/>
+        <uses rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StanislavskySystem"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#GosudarstvennayaGranitsa"/>
+        <name>Иван Петров</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#IzDetstva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#IzDetstva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SovietPeriod"/>
+        <name>Я родом из детства</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1966</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ListapadGrandPrix2005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ListapadGrandPrix2005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Award"/>
+        <name>Гран-при кинофестиваля «Лістапад» 2005</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#LyudiNaBolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#LyudiNaBolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SovietPeriod"/>
+        <name>Люди на болоте</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1981</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Masakra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Masakra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ModernPeriod"/>
+        <name>Масакра</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2010</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MeisnerTechnique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MeisnerTechnique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ActingMethod"/>
+        <name>Техника Мейснера</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MikhailPtashuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MikhailPtashuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Director"/>
+        <has_got_award rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PeopleArtistOfBelarus"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#VAvguste44go"/>
+        <name>Михаил Пташук</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ModernPeriod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ModernPeriod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+        <end_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2026</end_date>
+        <start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1997</start_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Nesterka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Nesterka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Animation"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SovietPeriod"/>
+        <name>Нестерка</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1965</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Noname -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Noname">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Crowd"/>
+        <uses rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StanislavskySystem"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosy"/>
+        <name>Александр Иванов</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#NonameNoSurname -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#NonameNoSurname">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Crowd"/>
+        <uses rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StanislavskySystem"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#IzDetstva"/>
+        <name>Алексей Кузнецов</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PavelKharlanchuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PavelKharlanchuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MainRoleActor"/>
+        <uses rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StanislavskySystem"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Masakra"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SmertShpionam"/>
+        <name>Павел Харланчук</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PeopleArtistOfBelarus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PeopleArtistOfBelarus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Award"/>
+        <name>Народный артист Беларуси</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PostSovietPeriod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PostSovietPeriod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+        <followed_by rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ModernPeriod"/>
+        <end_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1997</end_date>
+        <name>Постсоветский период</name>
+        <start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1991</start_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SmertShpionam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SmertShpionam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Series"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ModernPeriod"/>
+        <name>Смерть шпионам</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2007</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SovietPeriod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#SovietPeriod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#DevelopmentPeriod"/>
+        <followed_by rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PostSovietPeriod"/>
+        <end_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1991</end_date>
+        <name>Советский период</name>
+        <start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1924</start_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StanislavskySystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StanislavskySystem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ActingMethod"/>
+        <name>Система Станиславского</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StatePrize1985 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StatePrize1985">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Award"/>
+        <name>Государственная премия СССР 1985</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StefaniaStanyuta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StefaniaStanyuta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MainRoleActor"/>
+        <has_got_award rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PeopleArtistOfBelarus"/>
+        <uses rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MeisnerTechnique"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosy"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#IzDetstva"/>
+        <name>Стефания Станюта</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#VAvguste44go -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#VAvguste44go">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Movie"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#In_August_of_1944"/>
+        <belongs_to_the_period rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PostSovietPeriod"/>
+        <name>В августе 44-го</name>
+        <release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1997</release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#In_August_of_1944 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new#In_August_of_1944"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ViktorTurov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#ViktorTurov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#Director"/>
+        <has_got_award rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PeopleArtistOfBelarus"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#IzDetstva"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#LyudiNaBolate"/>
+        <name>Виктор Туров</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#VladimirGostyukhin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#VladimirGostyukhin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#MainRoleActor"/>
+        <has_got_award rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#PeopleArtistOfBelarus"/>
+        <uses rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#StanislavskySystem"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#BelyeRosy"/>
+        <works_in rdf:resource="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2#VAvguste44go"/>
+        <name>Владимир Гостюхин</name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,68 @@
+# constants.py
+# Canvas constants
+PARAM_POINT_RADIUS = 10
+CANVAS_MIN_WIDTH = 600
+CANVAS_MIN_HEIGHT = 600
+CANVAS_WIDTH = 2000
+CANVAS_HEIGHT = 2000
+INITIAL_OFFSET_X = 60
+INITIAL_OFFSET_Y = 740
+ANIM_TIMER_INTERVAL_MS = 30
+ALPHA_MAX = 255
+GRID_STEP = 20
+GRID_COLOR_R = 230
+GRID_COLOR_G = 230
+GRID_COLOR_B = 230
+AXIS_THICKNESS = 2
+LABEL_FONT_SIZE = 9
+LABEL_STEP = 100
+X_LABEL_OFFSET_X = -12
+X_LABEL_OFFSET_Y = 22
+Y_LABEL_OFFSET_X = -38
+Y_LABEL_OFFSET_Y = 6
+AXIS_LABEL_FONT_SIZE = 14
+Y_AXIS_LABEL_OFFSET_X = -35
+Y_AXIS_LABEL_OFFSET_Y = 10
+X_AXIS_LABEL_OFFSET_X = -20
+X_AXIS_LABEL_OFFSET_Y = 35
+ANIM_PEN_THICKNESS = 1
+START_PT_PEN_THICKNESS = 6
+
+# Logger constants
+LOG_FILENAME = "log_render.txt"
+LOG_SEPARATOR_LENGTH = 55
+LOG_NUM_WIDTH = 4
+LOG_X_WIDTH = 4
+LOG_Y_WIDTH = 4
+LOG_ALPHA_WIDTH = 6
+LOG_ALPHA_PRECISION = 2
+
+# Main window constants
+WINDOW_WIDTH = 1100
+WINDOW_HEIGHT = 850
+ZOOM_IN_FACTOR = 1.2
+ZOOM_OUT_FACTOR = 0.8
+
+# Матрица Эрмита (из учебника, верна)
+M_HERMITE = [
+    [ 2, -2,  1,  1],
+    [-3,  3, -2, -1],
+    [ 0,  0,  1,  0],
+    [ 1,  0,  0,  0]
+]
+
+# Матрица Безье (исправленный первый элемент)
+M_BEZIER = [
+    [-1,  3, -3,  1],
+    [ 3, -6,  3,  0],
+    [-3,  3,  0,  0],
+    [ 1,  0,  0,  0]
+]
+
+# Матрица B-сплайна (исправленный первый элемент)
+M_BSPLINE = [
+    [-1,  3, -3,  1],
+    [ 3, -6,  3,  0],
+    [-3,  0,  3,  0],
+    [ 1,  4,  1,  0]
+]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="MyOntology.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="MyOntology.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="My.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="MyOntology.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="file:/C:/Users/Aliak/Downloads/PBZ_Lab2_Filled.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="PBZ_Lab2_Filled.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="MyOntology.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="duplicate:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="My.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="duplicate:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="MyOntology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="duplicate:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="PBZ_Lab2_Filled_with_Imports.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new" uri="PBZ_Lab2_Filled.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology" uri="HolliwoodActors.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="shadowed:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="FINAL/MyOntology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="shadowed:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="FINAL/MyOntologyWithImports.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="shadowed:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new" uri="FINAL/PBZ_Lab2_Filled.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774003727425" name="shadowed:http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology" uri="FINAL/HolliwoodActors.rdf"/>
+    </group>
+</catalog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new" uri="PBZ_Lab2_Filled.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology" uri="HolliwoodActors.rdf"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="MyOntologyWithImports.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology" uri="file:/C:/5kurs/ПБЗ/HolliwoodActors.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new" uri="file:/C:/5kurs/ПБЗ/PBZ_Lab2_Filled.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1774073391751" name="duplicate:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="Imports.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774073391751" name="duplicate:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="MyOntology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774073391751" name="duplicate:http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2" uri="MyOntologyWithImports.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774073391751" name="http://www.semanticweb.org/alsane/ontologies/2026/1/untitled-ontology-2-new" uri="PBZ_Lab2_Filled.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1774073391751" name="http://www.semanticweb.org/hollywood/ontologies/2026/1/hollywood-ontology" uri="HolliwoodActors.rdf"/>
+    </group>
+</catalog>
